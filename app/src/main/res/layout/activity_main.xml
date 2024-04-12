@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/topview"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reward"
+            android:drawableLeft="@drawable/gift"
+            android:backgroundTint="@color/White"
+            android:textColor="@color/Black"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topview"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:id="@+id/title_page">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FlexiFunds"
+            android:textSize="30sp"
+            android:textColor="@color/Black"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_page"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/DodgerBlue"
+        android:layout_margin="5dp"
+        android:id="@+id/available"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Available Balance"
+            android:textSize="15sp"
+            android:textColor="@color/Black"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="php 300.00"
+            android:drawableRight="@drawable/plus"
+            android:drawablePadding="5dp"
+            android:textSize="30sp"
+            android:textColor="@color/Black"
+            android:layout_marginBottom="5dp"
+
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/available"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        android:layout_margin="5dp"
+        android:id="@+id/plugins"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/send"
+            android:id="@+id/sending"
+            android:layout_margin="10dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/give"
+            android:layout_margin="10dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/cashout"
+            android:layout_margin="10dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bill"
+            android:layout_margin="10dp"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/plugins"
+        android:id="@+id/plugin_title"
+        android:gravity="center"
+        android:background="@color/CornflowerBlue"
+        >
+
+        <TextView
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Send Money"
+            android:layout_margin="10dp"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:layout_width="51dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Recieve money"
+            android:layout_margin="10dp"
+            android:textColor="@color/Black"/>
+        <TextView
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Cash Out"
+            android:layout_margin="10dp"
+            android:textColor="@color/Black"/>
+        <TextView
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Pay Bills"
+            android:layout_margin="10dp"
+            android:textColor="@color/Black"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/plugin_title"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        android:layout_margin="5dp"
+        android:id="@+id/plugins2"
+
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/scanner"
+            android:layout_margin="10dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/transfer"
+            android:layout_margin="10dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wallet"
+            android:layout_margin="10dp"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/menu"
+            android:layout_margin="10dp"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/plugins2"
+        android:id="@+id/plugin_title2"
+        android:gravity="center"
+        android:background="@color/CornflowerBlue"
+        >
+
+        <TextView
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Scan To Pay"
+            android:layout_margin="10dp"
+            android:textColor="@color/Black"/>
+
+        <TextView
+            android:layout_width="59dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="Bank    Transfer"
+            android:textColor="@color/Black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="E-Wallet"
+            android:textColor="@color/Black" />
+        <TextView
+            android:layout_width="44dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Show More"
+            android:layout_margin="10dp"
+            android:textColor="@color/Black"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plugin_title2"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Transaction History"
+            android:textSize="20sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_marginLeft="200dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plugin_title2"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp"
+        android:id="@+id/transaction"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="News for you"
+            android:textSize="20sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_marginLeft="260dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plugin_title2"
+        android:orientation="horizontal"
+        android:layout_marginTop="110dp"
+        android:id="@+id/features"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Features of the Month"
+            android:textSize="20sp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_marginLeft="138dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

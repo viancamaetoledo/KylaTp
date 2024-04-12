@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/nude"
+    >
+
+
+
+    <TextView
+        android:id="@+id/sti1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:fontFamily="cursive"
+        android:text="E-Learning App"
+        android:textSize="50sp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/sti2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sti1"
+        android:layout_marginTop="35dp"
+        android:gravity="center"
+        android:text="Login as Admin"
+        android:textSize="15sp"
+
+        />
+
+    <TextView
+        android:id="@+id/loginas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@+id/sti1"
+        android:layout_marginTop="80dp"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="Username"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/purple"
+        android:layout_below="@+id/loginas"
+        />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="Password"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/purple"
+        android:layout_below="@+id/user"
+        />
+
+    <EditText
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="Status"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/purple"
+        android:layout_below="@+id/pass"
+        />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:text="Login"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/purple"
+        android:layout_below="@+id/status"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/noacc1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Don't have an account yet?"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:id="@+id/register1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Sign up here"
+            android:textColor="@color/blue"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
